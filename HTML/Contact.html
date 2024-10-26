@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send an email to Roushan</title>
+    <link
+      rel="shortcut icon"
+      href="../Images/Favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../Style/Style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- Logo Section -->
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="../Images/cropimg.jpg" alt="Logo"
+          /></a>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#" class="disabledLink">Blog</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="hamburger" style="color: #ffffff"></i>
+      </nav>
+    </header>
+
+    <!-- code for hamburger operation -->
+    <section class="noDisplay">
+      <a href="javascript:void(0)" class="closebtn" id="hamburgerClose"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <ul class="hamburgerLinks">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#" class="disabledLink">Blog</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- form -->
+    <section class="cform">
+      <div class="contact-form">
+        <h2>I’m Just an Email Away – Let’s Connect!</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="7b5fd7bb-1811-48cf-b644-8dcc42e94951"
+          />
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+
+    <footer>Designed and Developed by @Roushan Kumar &copy2024</footer>
+
+    <script
+      src="https://kit.fontawesome.com/467c67b3fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JavaScript/Index.js"></script>
+  </body>
+</html>

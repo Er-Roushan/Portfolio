@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hero {
+        opacity: 0; /* Initially hidden */
+        transform: translateY(20px); /* Starts slightly lower */
+        transition: opacity 1s ease-out, transform 1s ease-out;
+      }
+
+      .hero.show {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Moves to its original position */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">Welcome to My Portfolio</div>
+
+    <script>
+      window.onload = function () {
+        document.querySelector(".hero").classList.add("show");
+      };
+    </script>
+  </body>
+</html>

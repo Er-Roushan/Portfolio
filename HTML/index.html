@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To My Portfolio Web</title>
+
+    <link
+      rel="shortcut icon"
+      href="../Images/Favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../Style/Style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- Logo Section -->
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="../Images/cropimg.jpg" alt="Logo"
+          /></a>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+          <li><a href="#" disabled>About</a></li>
+          <li><a href="#" class="disabledLink">Blog</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="hamburger" style="color: #ffffff"></i>
+      </nav>
+    </header>
+
+    <!-- code for hamburger operation -->
+    <section class="noDisplay">
+      <a href="javascript:void(0)" class="closebtn" id="hamburgerClose"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <ul class="hamburgerLinks">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#" class="disabledLink">Blog</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Landing code -->
+
+    <section class="frontView">
+      <div class="frontImage"><img src="../Images/cropimg.jpg" alt="" /></div>
+      <div class="greeting">Welcome to My Portfolio! 😊</div>
+      <div class="name">
+        Hi, I’m <span style="color: tomato">Roushan Kumar</span>
+      </div>
+      <div class="nameFolloUpLine">
+        A Developer driven by curiosity and a love for coding.
+      </div>
+      <div class="briefIntro">
+        While I’m still in the early stages of my career, I am excited to take
+        my acquired <span class="responsiveBreak"> <br /></span> skills to the
+        next level and continue growing, contributing, and building meaningful
+        experiences.
+      </div>
+      <div class="connectIcons">
+        <a
+          href="https://drive.google.com/file/d/1zE9LXqEyG1LyYHHXDwHwDn4FzYOa_pVo/view?usp=drive_link"
+          target="_blank"
+        >
+          <i
+            class="fa-solid fa-file fa-2x"
+            style="color: #74c0fc"
+            title="Download Resume"
+          ></i
+        ></a>
+        <a href="https://github.com/Er-Roushan"
+          ><i
+            class="fa-brands fa-github fa-2x"
+            style="color: #74c0fc"
+            title="Visit GitHub"
+          ></i
+        ></a>
+        <a href="https://linkedin.com/in/erroushankr">
+          <i
+            class="fa-brands fa-linkedin fa-2x"
+            style="color: #74c0fc"
+            title="Visit Linkedin"
+          ></i
+        ></a>
+        <a href="mailto:kumaarr867@gmail.com">
+          <i
+            class="fa-solid fa-envelope fa-2x"
+            style="color: #74c0fc"
+            title="Send a Mail"
+          ></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills lazy-background" data-bg="../Images/skillsbg2.jpg">
+      <div><h3>My Skills</h3></div>
+      <div class="skillsCard">
+        <!-- spring -->
+        <div class="card">
+          <div class="skillLogo spring"></div>
+          <h4>Spring</h4>
+        </div>
+
+        <!-- core java -->
+        <div class="card">
+          <div class="skillLogo coreJava"></div>
+          <h4>Core Java</h4>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="card">
+          <div class="skillLogo js"></div>
+          <h4>javaScript</h4>
+        </div>
+
+        <!-- Oracle SQL -->
+        <div class="card">
+          <div class="skillLogo db"></div>
+          <h4>Oracle SQL</h4>
+        </div>
+
+        <!-- HTML -->
+        <div class="card">
+          <div class="skillLogo html"></div>
+          <h4>HTML</h4>
+        </div>
+
+        <!-- CSS -->
+        <div class="card">
+          <div class="skillLogo css"></div>
+          <h4>CSS</h4>
+        </div>
+
+        <!-- PHP -->
+        <div class="card">
+          <div class="skillLogo php"></div>
+          <h4>PHP</h4>
+        </div>
+
+        <!-- MySQL -->
+        <div class="card">
+          <div class="skillLogo mysql"></div>
+          <h4>MySQL</h4>
+        </div>
+
+        <!-- GIT -->
+        <div class="card">
+          <div class="skillLogo git"></div>
+          <h4>Git</h4>
+        </div>
+
+        <!-- GITHUB -->
+        <div class="card">
+          <div class="skillLogo github"></div>
+          <h4>Github</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project's Section (used class belongs to skills section)-->
+    <section class="project lazy-background" data-bg="../Images/project.jpg">
+      <div><h3>Explore My Projects</h3></div>
+      <div class="skillsCard">
+        <!-- Weather Forecaster -->
+        <div class="projectCard">
+          <div class="projectImg weather"></div>
+          <h4>Weather Forecaster</h4>
+        </div>
+
+        <!-- Music Player -->
+        <div class="projectCard">
+          <div class="projectImg musicPlayer"></div>
+          <h4>Music Player</h4>
+        </div>
+
+        <!-- Event Enroll -->
+        <div class="projectCard">
+          <div class="projectImg eventMS"></div>
+          <h4>Event Enroll</h4>
+        </div>
+
+        <!-- Developing project info -->
+
+        <div class="projectCard">
+          <div class="projectImg developing"></div>
+          <h4 class="ongoindDevInfo">Ongoing Development, Stay Tuned 😊</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- bottom contact section -->
+    <section class="contact">
+      <div class="contactButton">
+        <a href="./Contact.html"
+          >Want to Contact ? &nbsp;
+          <i
+            class="fa-solid fa-circle-chevron-right"
+            style="color: #ffd43b"
+          ></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>Designed and Developed by @Roushan Kumar &copy2024</footer>
+
+    <!-- fontAwesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/467c67b3fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JavaScript/Index.js"></script>
+  </body>
+</html>
